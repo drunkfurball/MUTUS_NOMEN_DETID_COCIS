@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="author" content="Murph Strange" />
+        <title>MUTUS NOMEN DETID COCIS</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    
+    <body onload="secret_key=onLoad();">
+
+            <div id="page-0" class="page hidden">
+                <table>
+                    <tr><td>
+                    <div id="p-card0" class="card" ></div>
+                    <div id="p-card1" class="card" ></div>
+                    </td><td>
+                    <div id="p-card2" class="card" ></div>
+                    <div id="p-card3" class="card" ></div>
+                    </td><td>
+                    <div id="p-card4" class="card" ></div>
+                    <div id="p-card5" class="card" ></div>
+                    </td><td>
+                    <div id="p-card6" class="card" ></div>
+                    <div id="p-card7" class="card" ></div>
+                    </td></tr><tr><td>
+                    <div id="p-card8" class="card" ></div>
+                    <div id="p-card9" class="card" ></div>
+                    </td><td>
+                    <div id="p-card10" class="card" ></div>
+                    <div id="p-card11" class="card" ></div>
+                    </td><td>
+                    <div id="p-card12" class="card" ></div>
+                    <div id="p-card13" class="card" ></div>
+                    </td><td>
+                    <div id="p-card14" class="card" ></div>
+                    <div id="p-card15" class="card" ></div>
+                    </td></tr><tr><td></td><td>
+                    <div id="p-card16" class="card" ></div>
+                    <div id="p-card17" class="card" ></div>
+                    </td><td>
+                    <div id="p-card18" class="card" ></div>
+                    <div id="p-card19" class="card" ></div>
+                    </td><td></td></tr>
+                </table>
+                <caption>These pairs are randomly generated. Hit refresh a few times. Satisfied? Good. Select a pair in your mind. Do NOT click any cards. You may say it out loud if you like.</caption>
+                <a href="#" onclick="goToPage1();">NEXT -></a>
+            </div>
+
+            <div id="page-1" class="page hidden">
+                <table>
+                    <tr><th>A</th>
+                        <td>
+                            <div id="0-card0" class="card" ></div>
+                            <div id="0-card1" class="card" ></div>
+                            <div id="0-card2" class="card" ></div>
+                            <div id="0-card3" class="card" ></div>
+                            <div id="0-card4" class="card" ></div>
+                        </td>
+                    </tr>
+                    <tr><th>B</th>
+                        <td>
+                            <div id="1-card0" class="card" ></div>
+                            <div id="1-card1" class="card" ></div>
+                            <div id="1-card2" class="card" ></div>
+                            <div id="1-card3" class="card" ></div>
+                            <div id="1-card4" class="card" ></div>                        
+                        </td>
+                    </tr>
+                    <tr><th>C</th>
+                        <td>
+                            <div id="2-card0" class="card" ></div>
+                            <div id="2-card1" class="card" ></div>
+                            <div id="2-card2" class="card" ></div>
+                            <div id="2-card3" class="card" ></div>
+                            <div id="2-card4" class="card" ></div>
+                        </td>
+                    </tr>
+                    <tr><th>D</th>
+                        <td>
+                            <div id="3-card0" class="card" ></div>
+                            <div id="3-card1" class="card" ></div>
+                            <div id="3-card2" class="card" ></div>
+                            <div id="3-card3" class="card" ></div>
+                            <div id="3-card4" class="card" ></div>
+                        </td>
+                    </tr>
+                </table>
+                <caption>Remember your cards? In the drop-down boxes below, enter the row(s) you see them in.</caption>
+                <form name="controller">
+                    <label for="first">Row of the first card:</label><select name="first">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
+                    <label for="second">Row of the second card:</label><select name="second">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
+                </form>
+                <a href="#" onclick="goToPage2();">NEXT -></a>
+            </div>
+
+            <div id="page-2" class="page hidden">
+                    <div id="secret_card" class="secret" onclick="setSecretCard(document.controller.first.value, document.controller.second.value);">
+                        <p>Reveal</p>
+                    </div>
+            </div>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+
+</html>
